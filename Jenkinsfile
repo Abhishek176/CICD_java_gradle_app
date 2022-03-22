@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+    tools {
+        name: 'docker'
+    }
     environment{
         VERSION = "${env.BUILD_ID}"
     }
